@@ -1,18 +1,10 @@
 #include <stdio.h>
 
 #include <string.h>
-
-
-int main()
+void any( char* str , char* str2 )
 {
-        char str[100];
-        char str2[100];
-	scanf("%[^\n]%*c", str);
-	scanf("%[^\n]%*c", str2);
-
-	
-
-	int n = strlen(str);
+    
+    	int n = strlen(str);
 	int n2 = strlen(str2);
 	int count=0;
 
@@ -39,12 +31,20 @@ int main()
 	{
 	    printf("-1");
 	}
-
-
-
-
-   	
-
-   	return 0;
+    
 }
 
+
+int main()
+{
+        char str[100];
+        char str2[100];
+	scanf("%[^\n]%*c", str);
+	scanf("%[^\n]%*c", str2);
+
+	
+
+	any(str , str2);
+
+return 0;
+}
