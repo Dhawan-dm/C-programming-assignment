@@ -5,8 +5,8 @@
 
 int main()
 {
-        char str[]="Hello World";
-	
+        char str[100];
+	scanf("%[^\n]%*c", str);
 
 	
 
